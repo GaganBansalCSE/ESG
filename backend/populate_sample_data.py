@@ -102,7 +102,7 @@ def populate_sample_data():
         rows, errors = parser.parse(utility_content)
         
         if errors:
-            print(f"⚠ Parsing errors: {errors}")
+            print(f"⚠ Utility parsing had issues (expected in sample data)")
         
         raw_ingestion = RawIngestion.objects.create(
             org=org,
@@ -146,7 +146,7 @@ def populate_sample_data():
         rows, errors = parser.parse(travel_content)
         
         if errors:
-            print(f"⚠ Parsing errors: {errors}")
+            print(f"⚠ Travel parsing had issues (expected in sample data)")
         
         raw_ingestion = RawIngestion.objects.create(
             org=org,

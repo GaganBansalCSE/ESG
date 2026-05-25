@@ -79,8 +79,12 @@ class RawIngestionViewSet(viewsets.ModelViewSet):
         try:
             parsed_rows, parse_errors = parser.parse(file_content)
         except Exception as e:
+            # Log the full error server-side, but don't expose to client
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.error(f'Parse error: {str(e)}', exc_info=True)
             return Response(
-                {'error': f'Failed to parse file: {str(e)}'},
+                {'error': 'Failed to parse file. Please check the file format and try again.'},
                 status=status.HTTP_400_BAD_REQUEST
             )
         
