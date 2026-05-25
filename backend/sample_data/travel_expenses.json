@@ -1,0 +1,120 @@
+[
+  {
+    "id": "EXP-2024-001",
+    "employee_id": "EMP-101",
+    "department": "Sales",
+    "currency": "USD",
+    "segments": [
+      {
+        "type": "AIRFR",
+        "start_date": "2024-01-15",
+        "end_date": "2024-01-15",
+        "origin": "NYC",
+        "destination": "LAX",
+        "distance": 2451,
+        "cabin_class": "Business",
+        "is_round_trip": false,
+        "cost": 1250.00
+      },
+      {
+        "type": "HOTEL",
+        "start_date": "2024-01-15",
+        "end_date": "2024-01-18",
+        "city": "Los Angeles",
+        "nights": 3,
+        "cost": 450.00
+      }
+    ]
+  },
+  {
+    "id": "EXP-2024-002",
+    "employee_id": "EMP-102",
+    "department": "Engineering",
+    "currency": "USD",
+    "segments": [
+      {
+        "type": "AIRFR",
+        "start_date": "2024-02-01",
+        "end_date": "2024-02-01",
+        "origin": "SFO",
+        "destination": "JFK",
+        "distance": 2565,
+        "cabin_class": "",
+        "cost": 850.00
+      }
+    ]
+  },
+  {
+    "id": "EXP-2024-003",
+    "employee_id": "EMP-103",
+    "department": "Marketing",
+    "currency": "EUR",
+    "segments": [
+      {
+        "type": "AIRFR",
+        "start_date": "2024-02-10",
+        "end_date": "2024-02-10",
+        "origin": "BER",
+        "destination": "LON",
+        "cabin_class": "Economy",
+        "is_round_trip": true,
+        "cost": 420.00
+      },
+      {
+        "type": "TAXIF",
+        "start_date": "2024-02-10",
+        "end_date": "2024-02-10",
+        "origin": "LHR",
+        "destination": "Hotel",
+        "cost": 45.00
+      }
+    ]
+  },
+  {
+    "id": "EXP-2024-004",
+    "employee_id": "EMP-104",
+    "department": "Finance",
+    "currency": "GBP",
+    "segments": [
+      {
+        "type": "RAILF",
+        "start_date": "2024-03-01",
+        "end_date": "2024-03-01",
+        "origin": "London",
+        "destination": "Manchester",
+        "distance": 280,
+        "cost": 85.50
+      }
+    ]
+  },
+  {
+    "id": "EXP-2024-005",
+    "employee_id": "EMP-105",
+    "department": "HR",
+    "currency": "USD",
+    "segments": [
+      {
+        "type": "AIRFR",
+        "start_date": "2024-03-15",
+        "end_date": "2024-03-15",
+        "origin": "ORD",
+        "destination": "MIA",
+        "cabin_class": "Premium Economy",
+        "cost": 680.00
+      },
+      {
+        "type": "HOTEL",
+        "start_date": "2024-03-15",
+        "end_date": "2024-03-17",
+        "location": "Miami",
+        "cost": 380.00
+      },
+      {
+        "type": "CARHIRE",
+        "start_date": "2024-03-15",
+        "end_date": "2024-03-17",
+        "cost": 220.00
+      }
+    ]
+  }
+]
